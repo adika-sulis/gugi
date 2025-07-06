@@ -1,12 +1,26 @@
 html, body {
   overflow: hidden;
-  max-height:1180px;
   box-sizing: border-box;
 }
 
 video {
-    height: 100%;
+    width:33%;
+    position: relative;
+    display: inline-block;
+    
+}
+
+@media only screen and (max-width:768px) {
+  video {
     width: 100%;
+  }
+}
+
+.fb-c {
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 div, .container-fluid {
