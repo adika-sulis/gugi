@@ -1,10 +1,8 @@
 html, body {
-  overflow: hidden;
   box-sizing: border-box;
 }
 
 video {
-    width:33%;
     position: relative;
     display: inline-block;
     
@@ -14,6 +12,12 @@ video {
   video {
     width: 100%;
   }
+}
+
+@media only screen and (min-width: 800px) {
+    video {
+      width: 33%;
+    }
 }
 
 .fb-c {

@@ -7,16 +7,14 @@ window.onload = function () {
 function playVideo() {
     document.getElementById("hang").style.display = "none";
 
-    const videos = ['vidi', 'vidi2', 'vidi3'];
-
-    videos.forEach(id => {
-        const video = document.getElementById(id);
+    for (let i = 1; i <= 90; i++) {
+        const video = document.getElementById(`vidi${i}`);
         if (video) {
             video.play().then(() => {
-                console.log(`${id} elindult.`);
+                console.log(`vidi${i} elindult.`);
             }).catch((err) => {
-                console.error(`${id} hiba történt a lejátszás során:`, err);
+                console.error(`vidi${i} hiba a lejátszásnál:`, err);
             });
         }
-    });
+    }
 }
